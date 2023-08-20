@@ -46,11 +46,11 @@
   </head>
   <style>
     .custom-bordered-table {
-      border: 1px solid black; 
+      border: 1px solid black;
     }
     .custom-bordered-table th,
     .custom-bordered-table td {
-      border: 1px solid black; 
+      border: 1px solid black;
     }
   </style>
 
@@ -455,109 +455,234 @@
             <!-- start page title -->
             <!-- end page title -->
 
-            <div class="container mt-4">
-              <div class="d-flex justify-content-between">
-                <h4><i class="mdi mdi-24px mdi-account"></i> Daniel Martinez Tamez</h4>
-                <button type="button" class="btn btn-success waves-effect waves-light"><i class="fe-printer"></i> Expediente Clinico</button>
-              </div>
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <h2>Vacunacion del Adulto</h2>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><button type="button" class="btn btn-success waves-effect waves-light">MMR</button></td>
-                    <td>Previene: Sarampion, Paperas,Rubeola</td>
-                    <td>
-                      <label>Primera(Entre los 19 y 49 años)</label>
-                      <input type="date" class="form-control">
-                    </td>
-                    <td>
-                      <label>Segunda</label>
-                      <input type="date" class="form-control" placeholder="07-04-2021">
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td><button type="button" class="btn btn-success waves-effect waves-light">TD</button></td>
-                    <td>Previene: Tetanos/Difteria</td>
-                    <td>
-                      <label>Primera(Cada 10 años)</label>
-                      <input type="date" class="form-control">
-                      <label>Tercera</label>
-                      <input type="date" class="form-control" placeholder="07-04-2021">
-                    </td>
-                    <td>
-                      <label>Segunda</label>
-                      <input type="date" class="form-control" placeholder="07-04-2021">
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td><button type="button" class="btn btn-success waves-effect waves-light">Influenza</button></td>
-                    <td>Previene: Gripe</td>
-                    <td>
-                      <label>Primera(Aplicacion anual)</label>
-                      <input type="date" class="form-control">
-                      <label>Tercera</label>
-                      <input type="date" class="form-control" placeholder="07-04-2021">
-                    </td>
-                    <td>
-                      <label>Segunda</label>
-                      <input type="date" class="form-control" placeholder="07-04-2021">
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td><button type="button" class="btn btn-success waves-effect waves-light">Neumococo</button></td>
-                    <td></td>
-                    <td>
-                      <label>Unica(Mayores de 65 años)</label>
-                      <input type="date" class="form-control">
-                     
-                    </td>
-                    
-                  </tr>
-                  <!-- Agrega más filas según sea necesario -->
-                </tbody>
-              </table>
-            </div>
-            <!-- end row -->
-          </div>
-          <!-- container -->
-        </div>
-        <!-- content -->
-
-        <!-- Footer Start -->
-        <footer class="footer">
-          <div class="container-fluid">
             <div class="row">
-              <div class="col-md-6">
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                &copy; Expediente clínico by
-                <a href="https://windsoftti.com/">Windsoft TI</a>
-              </div>
-              <div class="col-md-6">
-                <div class="text-md-end footer-links d-none d-sm-block">
-                  <a href="javascript:void(0);">Nosotros</a>
-                  <a href="javascript:void(0);">Ayuda</a>
-                  <a href="javascript:void(0);">Contáctanos</a>
+              <div class="card mt-3">
+                <div class="row-cols-1 row-xl-6 row-lg-4">
+                  <h4>
+                    <i class="mdi mdi-24px mdi-account"></i>
+                    <span>Daniel Martinez Tamez</span>
+                  </h4>
                 </div>
               </div>
+
+              <div class="card">
+                <form novalidate>
+                  <div class="d-flex card-header bg-white pb-1 pt-1">
+                    <h3 class="my-2">Vacunación del adulto</h3>
+                  </div>
+                  <div class="row card-body">
+                    <div class="row my-2">
+                      <div class="card-header bg-white pb-1 pt-1">
+                        <h5 class="">MMR</h5>
+                      </div>
+                      <div class="row card-body">
+                        <div class="row my-2">
+                          <div class="col d-flex align-items-center">
+                            <p>
+                              <strong>Previene: </strong> Sarampion,
+                              Paperas,Rubeola
+                            </p>
+                          </div>
+                          <div class="col">
+                            <label>Primera(Entre los 19 y 49 años)</label>
+                            <input type="date" class="form-control" />
+                          </div>
+                          <div class="col">
+                            <label>Segunda</label>
+                            <input type="date" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-2">
+                      <div class="card-header bg-white pb-1 pt-1">
+                        <h5 class="">TD</h5>
+                      </div>
+                      <div class="row card-body">
+                        <div class="row my-2">
+                          <div class="col d-flex align-items-center">
+                            <p><strong>Previene: </strong> Tétanos/Difteria</p>
+                          </div>
+                          <div class="col">
+                            <label>Primera(Cada 10 años)</label>
+                            <input type="date" class="form-control" />
+                          </div>
+                          <div class="col">
+                            <label>Segunda</label>
+                            <input type="date" class="form-control" />
+                            <br />
+                            <label>Tercera</label>
+                            <input type="date" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-2">
+                      <div class="card-header bg-white pb-1 pt-1">
+                        <h5 class="">Influenza</h5>
+                      </div>
+                      <div class="row card-body">
+                        <div class="row my-2">
+                          <div class="col d-flex align-items-center">
+                            <p><strong>Previene: </strong> Gripe</p>
+                          </div>
+                          <div class="col">
+                            <label>Primera(Aplicación anual)</label>
+                            <input type="date" class="form-control" />
+                          </div>
+                          <div class="col">
+                            <label>Segunda</label>
+                            <input type="date" class="form-control" />
+                            <br />
+                            <label>Tercera</label>
+                            <input type="date" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-2">
+                      <div class="card-header bg-white pb-1 pt-1">
+                        <h5 class="">Neumococo</h5>
+                      </div>
+                      <div class="row card-body">
+                        <div class="row my-2">
+                          <div class="col d-flex align-items-center">
+                            <p><strong>Previene: </strong> Neumococo</p>
+                          </div>
+                          <div class="col"></div>
+                          <div class="col">
+                            <label>Única(Mayores de 65 años)</label>
+                            <input type="date" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-2">
+                      <div class="card-header bg-white pb-1 pt-1">
+                        <h5 class="">HBV</h5>
+                      </div>
+                      <div class="row card-body">
+                        <div class="row my-2">
+                          <div class="col d-flex align-items-center">
+                            <p><strong>Previene: </strong> Hepatitis B</p>
+                          </div>
+                          <div class="col">
+                            <label>Primera(Inicial)</label>
+                            <input type="date" class="form-control" />
+                          </div>
+                          <div class="col">
+                            <label>Segunda(1 mes después)</label>
+                            <input type="date" class="form-control" />
+                            <br />
+                            <label>Tercera(6 meses después)</label>
+                            <input type="date" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-2">
+                      <div class="card-header bg-white pb-1 pt-1">
+                        <h5 class="">HAV</h5>
+                      </div>
+                      <div class="row card-body">
+                        <div class="row my-2">
+                          <div class="col d-flex align-items-center">
+                            <p><strong>Previene: </strong> Hepatitis A</p>
+                          </div>
+                          <div class="col">
+                            <label>Primera(Inicial)</label>
+                            <input type="date" class="form-control" />
+                          </div>
+                          <div class="col">
+                            <label>Segunda(6 meses después)</label>
+                            <input type="date" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-2">
+                      <div class="card-header bg-white pb-1 pt-1">
+                        <h5 class="">Varicela</h5>
+                      </div>
+                      <div class="row card-body">
+                        <div class="row my-2">
+                          <div class="col d-flex align-items-center">
+                            <p><strong>Previene: </strong> Varicela</p>
+                          </div>
+                          <div class="col">
+                            <label>Primera(Inicial)</label>
+                            <input type="date" class="form-control" />
+                          </div>
+                          <div class="col">
+                            <label>Segunda(4 semanas después)</label>
+                            <input type="date" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-2">
+                      <div class="card-header bg-white pb-1 pt-1">
+                        <h5 class="">Otras vacunas</h5>
+                      </div>
+                      <div class="row card-body">
+                        <div class="row my-2">
+                          <div class="col">
+                            <textarea
+                            class="form-control"
+                            cols="30"
+                            rows="10"
+                          ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row card-body">
+                      <div class="row my-2">
+                        <div class="col">
+                          <button class="btn btn-primary my-2" type="submit">
+                            <i class="fa fa-fw fa-plus-circle"></i>Guardar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
-        </footer>
-        <!-- end Footer -->
+        </div>
+        <!-- container -->
       </div>
+      <!-- content -->
 
-      <!-- ============================================================== -->
-      <!-- End Page content -->
-      <!-- ============================================================== -->
+      <!-- Footer Start -->
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              &copy; Expediente clínico by
+              <a href="https://windsoftti.com/">Windsoft TI</a>
+            </div>
+            <div class="col-md-6">
+              <div class="text-md-end footer-links d-none d-sm-block">
+                <a href="javascript:void(0);">Nosotros</a>
+                <a href="javascript:void(0);">Ayuda</a>
+                <a href="javascript:void(0);">Contáctanos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end Footer -->
     </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
     <!-- END wrapper -->
 
     <!-- Vendor js -->
