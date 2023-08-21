@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Agregar pacientes | Expediente clínico</title>
+    <title>Nueva consulta | Expediente clínico</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- App favicon -->
@@ -443,50 +443,83 @@
         <div class="content">
           <!-- Start Content-->
           <div class="container-fluid">
-            <!-- start page title -->
-
-            <!-- end page title -->
-
-            <div class="row">
-              <div class="card d-flex mt-3">
-                <div class="row-cols-1 row-xl-6 row-lg-4">
-                  <h2>
-                    <i class="fa fa-fw fa-user fa-1x"></i>
-                    <span>Daniel Martínez Tamez</span>
-                  </h2>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <div class="btn btn-primary btn-submit col-md-auto my-1">
-                    <span>
-                      <i class="fa fa-print"></i>
-                      Expediente Clínico
-                    </span>
+            <div class="row mt-3">
+              <div class="col-xl-12">
+                <div class="card">
+                  <div
+                    class="card-header bg-white mb-0 d-flex justify-content-between"
+                  >
+                    <div class="d-flex flex-column">
+                      <h3 class="mb-0 mt-0">
+                        <span>Daniel Martinez Tamez</span>
+                      </h3>
+                      <div class="d-flex">
+                        <h6 class="my-auto"><span>34 años </span></h6>
+                        <h6 class="my-auto mx-2">74 kg</h6>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="btn btn-primary">
+                        <i class="fa fa-print"></i>
+                        Imprimir expediente
+                      </button>
+                    </div>
                   </div>
-                  <div class="btn btn-secondary btn-submit col-md-auto my-1">
-                    <span>
-                      <i class=""></i>
-                      Consultas previas
-                    </span>
-                  </div>
-
                 </div>
               </div>
-              <div class="">
-                <div class="row">
-                  En Consulta
-                </div>
-              </div>
-            </div>
-            <!-- end row -->
-
-            <div class="row">
-              <div class="card">
-                <form novalidate>
-                  <div class="d-flex card-header bg-white pb-1 pt-1">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link" href="datos_personales.html"
+                          >Datos personales</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="nueva_consulta.html"
+                          >Consultas</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="antecedentes.html"
+                          >Antecedentes
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"
+                          >Valoraciones</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="vacunas.html">Vacunas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"
+                          >Anotaciones médicas</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-header bg-white">
+                    <ul class="nav nav-pills card-header-pills">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="nueva_consulta.html"
+                          >Nueva consulta</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="consultas.html"
+                          >Consultas realizadas</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-header bg-white pb-1 pt-1">
                     <h4 class="my-2">Datos iniciales</h4>
                   </div>
-                  <div class="row card-body">
-                    <div class="row my-2">
+                  <div class="card-body">
+                    <div class="row">
                       <div class="col-lg-6">
                         <label>Doctor en consulta</label>
                         <select class="form-control">
@@ -531,12 +564,11 @@
                     </div>
                   </div>
 
-                  <div class="d-flex card-header bg-white pb-1 pt-1">
+                  <div class="card-header bg-white pb-1 pt-1">
                     <h4 class="my-2">Signos vitales</h4>
                   </div>
 
-                  <div class="row card-body">
-
+                  <div class="card-body">
                     <div class="row my-2">
                       <div class="col">
                         <label>Temperatura (°C)</label>
@@ -586,7 +618,6 @@
                       </div>
                     </div>
 
-
                     <div class="row my-2">
                       <div class="col">
                         <label>Presión sistólica (mmHg)</label>
@@ -611,11 +642,11 @@
                     </div>
                   </div>
 
-                  <div class="d-flex card-header bg-white pb-1 pt-1">
+                  <div class="card-header bg-white pb-1 pt-1">
                     <h4 class="my-2">Exploración física</h4>
                   </div>
 
-                  <div class="row card-body">
+                  <div class="card-body">
                     <div class="row my-2">
                       <div class="col">
                         <label>Anotaciones</label>
@@ -629,11 +660,11 @@
                     </div>
                   </div>
 
-                  <div class="d-flex card-header bg-white pb-1 pt-1">
+                  <div class="card-header bg-white pb-1 pt-1">
                     <h4 class="my-2">Diagnóstico general</h4>
                   </div>
 
-                  <div class="row card-body">
+                  <div class="card-body">
                     <div class="row my-2">
                       <div class="col">
                         <label>Diagnóstico</label>
@@ -658,11 +689,11 @@
                     </div>
                   </div>
 
-                  <div class="d-flex card-header bg-white pb-1 pt-1">
+                  <div class="card-header bg-white pb-1 pt-1">
                     <h4 class="my-2">Evolución</h4>
                   </div>
 
-                  <div class="row card-body">
+                  <div class="card-body">
                     <div class="row my-2">
                       <div class="col">
                         <textarea
@@ -674,11 +705,11 @@
                     </div>
                   </div>
 
-                  <div class="d-flex card-header bg-white pb-1 pt-1">
+                  <div class="card-header bg-white pb-1 pt-1">
                     <h4 class="my-2">Receta</h4>
                   </div>
 
-                  <div class="row card-body">
+                  <div class="card-body">
                     <div class="row my-2">
                       <div class="col">
                         <label>Escriba el tratamiento</label>
@@ -691,11 +722,11 @@
                     </div>
                   </div>
 
-                  <div class="d-flex card-header bg-white pb-1 pt-1">
+                  <div class="card-header bg-white pb-1 pt-1">
                     <h4 class="my-2">Estudios de laboratorio</h4>
                   </div>
 
-                  <div class="row card-body">
+                  <div class="card-body">
                     <div class="row my-2">
                       <div class="col">
                         <textarea
@@ -707,11 +738,11 @@
                     </div>
                   </div>
 
-                  <div class="d-flex card-header bg-white pb-1 pt-1">
+                  <div class="card-header bg-white pb-1 pt-1">
                     <h4 class="my-2">Estudios de gabinete</h4>
                   </div>
 
-                  <div class="row card-body">
+                  <div class="card-body">
                     <div class="row my-2">
                       <div class="col">
                         <textarea
@@ -723,20 +754,20 @@
                     </div>
                   </div>
 
-                  <div class="row card-body">
-                    <div class="row my-2">
-                      <div class="col">
-                        <button class="btn btn-primary my-2" type="submit">
-                          <i class="fa fa-fw fa-plus-circle mx-0"></i>Guardar
-                        </button>
-                      </div>
-                    </div>
+                  <div class="card-body">
+                    <button
+                      class="btn btn-primary waves-effect waves-light"
+                      type="submit"
+                    >
+                      <i class="mdi mdi-content-save"></i> Guardar
+                    </button>
                   </div>
-                </form>
-                <!-- end form -->
+                  <!-- end form -->
+                </div>
+                <!-- end card -->
               </div>
-              <!-- end card -->
             </div>
+
             <!-- end row -->
           </div>
           <!-- container -->

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Pacientes | Expediente clínico</title>
+    <title>Agregar pacientes | Expediente clínico</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- App favicon -->
@@ -44,36 +44,6 @@
     <!-- icons -->
     <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
   </head>
-  <style>
-    .custom-timeline-with-icons {
-      border-left: 1px solid hsl(0, 0%, 90%);
-      position: relative;
-      list-style: none;
-    }
-
-    .custom-timeline-with-icons .custom-timeline-item {
-      position: relative;
-    }
-
-    .custom-timeline-with-icons .custom-timeline-item:after {
-      position: absolute;
-      display: block;
-      top: 0;
-    }
-
-    .custom-timeline-with-icons .custom-timeline-icon {
-      position: absolute;
-      left: -48px;
-      background-color: #d3d6db;
-      color: #d3d6db;
-      border-radius: 50%;
-      height: 31px;
-      width: 31px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  </style>
 
   <body class="loading">
     <!-- Begin page -->
@@ -474,253 +444,275 @@
           <!-- Start Content-->
           <div class="container-fluid">
             <!-- start page title -->
+
             <!-- end page title -->
 
             <div class="row mt-3">
-              <div class="col-xl-8">
-                <div class="col-12">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="d-flex justify-content-between">
-                        <div class="d-flex">
-                          <div>
-                            <img
-                              src="../assets/images/users/default-user-image.png"
-                              width="220px"
-                              class="img-thumbnail"
-                            />
-                          </div>
-                          <div class="ms-1">
-                            <h2 class="mb-0 mt-0">
-                              <span>Daniel Martinez Tamez</span>
-                            </h2>
-                            <p class="mb-0">Masculino, 2 Años de edad</p>
-                            <p class="mb-0">
-                              Vive en Ext., Col. Escobedo NL, Mexico
-                            </p>
-                            <p class="mb-0">Paciente 1</p>
-                            <p class="mb-0">Fecha Registro 06/04/2021</p>
-                          </div>
-                        </div>
-
-                        <div>
-                          <div class="btn-group" role="group">
-                            <a href="datos_personales.html">
-                              <button
-                                type="button"
-                                class="btn btn-outline-secondary"
-                              >
-                                <i class="mdi mdi-file"></i>
-                                Expediente
-                              </button>
-                            </a>
-
-                            <button type="button" class="btn btn-primary">
-                              <i class="mdi mdi-stethoscope"></i>
-                              Iniciar Consulta
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <div class="card">
-                    <div class="row m-0">
-                      <div class="col-4 border text-center pb-1">
-                        <h1 class="fw-bold mb-0">86.00</h1>
-                        <span>Peso (Kg)</span>
-                      </div>
-                      <div class="col-4 border text-center pb-1">
-                        <h1 class="fw-bold mb-0">2</h1>
-                        <span>Edad (Años)</span>
-                      </div>
-                      <div class="col-4 border text-center pb-1">
-                        <h1 class="fw-bold mb-0">1.60</h1>
-                        <span>Talla (m)</span>
-                      </div>
-                    </div>
-                    <div class="row m-0">
-                      <div class="col-4 border text-center py-2">
-                        <p class="mb-0">Presión Sistólica</p>
-                        <p class="fw-bold mb-0">110 mmHg</p>
-                      </div>
-                      <div class="col-4 border text-center py-2">
-                        <p class="mb-0">Presión Diastólica</p>
-                        <p class="fw-bold mb-0">70 mmHg</p>
-                      </div>
-                      <div class="col-4 border text-center py-2">
-                        <p class="mb-0">Tipo Sanguíneo</p>
-                        <p class="fw-bold mb-0">NO CONOCE</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <div class="card">
-                    <div
-                      class="d-flex card-header bg-white align-items-center pb-1 pt-1"
-                    >
-                      <i
-                        class="mdi mdi-clock-outline mdi-24px me-1 text-dark"
-                      ></i>
-                      <h3 class="mb-0 mt-0">Historial de Paciente</h3>
-                    </div>
-
-                    <div class="card-body ps-4">
-                      <section class="">
-                        <ul class="custom-timeline-with-icons">
-                          <li class="custom-timeline-item mb-3">
-                            <span class="custom-timeline-icon">
-                              <i
-                                class="fas fa-clock fa-lg text-dark fa-sm fa-fw"
-                              ></i>
-                            </span>
-
-                            <div class="card">
-                              <div class="card-header bg-white pt-2 pb-2">
-                                <p class="mb-0">
-                                  <strong class="text-dark"
-                                    >Consulta realizada</strong
-                                  >
-                                  por
-                                  <i class="mdi mdi-stethoscope"></i>
-                                  <a class="text-primary fw-bold" href="#"
-                                    >Dr(a) Castillo</a
-                                  >
-                                </p>
-                              </div>
-                              <div class="card-body pt-1 pb-1">
-                                <div class="d-flex align-items-center">
-                                  <i class="far fa-clock mx-1 text-primary"></i>
-                                  07:26 PM
-                                  <i
-                                    class="fas fa-calendar-alt mx-1 text-primary"
-                                  ></i>
-                                  12-04-2021
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-
-                          <li class="custom-timeline-item mb-3">
-                            <span class="custom-timeline-icon">
-                              <i
-                                class="fas fa-clock fa-lg text-dark fa-sm fa-fw"
-                              ></i>
-                            </span>
-                            <div class="card">
-                              <div class="card-header bg-white pt-2 pb-2">
-                                <p class="mb-0">
-                                  <strong class="text-dark"
-                                    >Consulta realizada</strong
-                                  >
-                                  por
-                                  <i class="mdi mdi-stethoscope"></i>
-                                  <a class="text-primary fw-bold" href="#"
-                                    >Dr(a) Castillo</a
-                                  >
-                                </p>
-                              </div>
-                              <div class="card-body pt-1 pb-1">
-                                <div class="d-flex align-items-center">
-                                  <i class="far fa-clock mx-1 text-primary"></i>
-                                  07:26 PM
-                                  <i
-                                    class="fas fa-calendar-alt mx-1 text-primary"
-                                  ></i>
-                                  12-04-2021
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </section>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xl-4">
+              <div class="col-xl-12">
                 <div class="card">
-                  <div class="card-header bg-white pb-2 pt-2">
-                    <h3 class="mb-0 mt-0">Pacientes</h3>
-                  </div>
-
-                  <div class="card-body pb-2 pt-2">
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Buscar paciente..."
-                        aria-label="Buscar paciente..."
-                        aria-describedby="button-addon2"
-                      />
-                      <button
-                        class="btn btn-primary"
-                        type="button"
-                        id="button-addon2"
-                      >
-                        <i class="mdi mdi-account-search"></i>
+                  <div
+                    class="card-header bg-white mb-0 d-flex justify-content-between"
+                  >
+                    <div class="d-flex flex-column">
+                      <h3 class="mb-0 mt-0">
+                        <span>Daniel Martinez Tamez</span>
+                      </h3>
+                      <div class="d-flex">
+                        <h6 class="my-auto"><span>34 años </span></h6>
+                        <h6 class="my-auto mx-2">74 kg</h6>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="btn btn-primary">
+                        <i class="fa fa-print"></i>
+                        Imprimir expediente
                       </button>
                     </div>
                   </div>
-                  <div class="card-footer py-2 bg-white d-flex pb-2 pt-2">
-                    <b class="bg-primary m-0 rounded text-white px-1 font-16"
-                      >Pacientes registrados</b
-                    >
-                  </div>
                 </div>
-                <!-- end card-box -->
-
+              </div>
+              <div class="col-12">
                 <div class="card">
-                  <div class="d-flex p-2 border-bottom">
-                    <div>
-                      <img
-                        src="../assets/images/users/default-user-image.png"
-                        width="75px"
-                        class="img-thumbnail"
-                      />
-                    </div>
-                    <div class="ms-2">
-                      <h4>Daniel Martinez Tamez</h4>
-                    </div>
+                  <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="datos_personales.html"
+                          >Datos personales</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="nueva_consulta.html"
+                          >Consultas</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="antecedentes.html"
+                          >Antecedentes
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"
+                          >Valoraciones</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="vacunas.html">Vacunas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"
+                          >Anotaciones médicas</a
+                        >
+                      </li>
+                    </ul>
                   </div>
-                  <div class="d-flex p-2 border-bottom">
-                    <div>
-                      <img
-                        src="../assets/images/users/default-user-image.png"
-                        width="75px"
-                        class="img-thumbnail"
-                      />
-                    </div>
-                    <div class="ms-2">
-                      <h4>Hamilton A C</h4>
-                      <div class="d-flex align-items-center">
-                        <i
-                          class="fas fa-briefcase text-dark fa-sm fa-fw pe-1"
-                        ></i>
-                        Soñador
+                  <div class="d-flex card-header bg-white pb-1 pt-1">
+                    <h4 class="my-2">Doctor asignado</h4>
+                  </div>
+                  <div class="row card-body">
+                    <div class="row my-2">
+                      <div class="col-lg-6">
+                        <label>Doctor</label>
+                        <select class="form-control">
+                          <option>Dra. Castillo</option>
+                          <option>Dr. Martínez</option>
+                          <option>Dr. López</option>
+                          <option>Dra. Schlottfeldt</option>
+                        </select>
                       </div>
                     </div>
                   </div>
-                  <div class="d-flex p-2 border-bottom">
-                    <div>
-                      <img
-                        src="../assets/images/users/default-user-image.png"
-                        width="75px"
-                        class="img-thumbnail"
-                      />
+
+                  <div class="d-flex card-header bg-white pb-1 pt-1">
+                    <h4 class="my-2">Perfil básico</h4>
+                  </div>
+
+                  <div class="row card-body">
+                    <div class="row my-2">
+                      <div class="col-lg-6">
+                        <label
+                          ><a class="text-danger fw-bold" href="#">*</a>Nombre
+                          completo</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          required="true"
+                        />
+                      </div>
                     </div>
-                    <div class="ms-2">
-                      <h4>Pedro Garcia</h4>
+
+                    <div class="row my-2">
+                      <div class="col">
+                        <label>Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" />
+                      </div>
+                      <div class="col">
+                        <label>Lugar de Nacimiento</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="col">
+                        <label
+                          ><a class="text-danger fw-bold" href="#">*</a
+                          >Sexo</label
+                        >
+                        <select class="form-control" required="true">
+                          <option>Femenino</option>
+                          <option>Masculino</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <label>Estado civil</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="row my-2">
+                      <div class="col">
+                        <label>Ocupación</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="col">
+                        <label>Religión</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="col">
+                        <label>CURP</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="row my-2">
+                      <div class="col">
+                        <label>Referido por</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="col">
+                        <label>¿Tiene seguro médico?</label>
+                        <select class="form-control" required="true">
+                          <option>Sí</option>
+                          <option>No</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <label>Nombre del Seguro Médico</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="row my-2">
+                      <div class="col-md-auto">
+                        <label
+                          ><a class="text-danger fw-bold" href="#">*</a>Tipo de
+                          Sangre</label
+                        >
+                        <select class="form-control" required="true">
+                          <option>No conoce</option>
+                          <option>A+</option>
+                          <option>A-</option>
+                          <option>B+</option>
+                          <option>B-</option>
+                          <option>AB+</option>
+                          <option>AB-</option>
+                          <option>O+</option>
+                          <option>O-</option>
+                        </select>
+                      </div>
                     </div>
                   </div>
+
+                  <div class="d-flex card-header bg-white pb-1 pt-1">
+                    <h4 class="my-2">Datos de contacto</h4>
+                  </div>
+
+                  <div class="row card-body">
+                    <div class="row my-2">
+                      <div class="col">
+                        <label>Calle</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="col">
+                        <label>Núm. Exterior</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="col">
+                        <label>Núm. Interior</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="col">
+                        <label>Colonia</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="row my-2">
+                      <div class="col">
+                        <label>Delegación/Municipio</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="col">
+                        <label>Ciudad</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="col">
+                        <label>Estado</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="col">
+                        <label>Código Postal</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="row my-2">
+                      <div class="col-md-3">
+                        <label>País</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="row my-2">
+                      <div class="col">
+                        <label>Teléfono</label>
+                        <input type="number" class="form-control" />
+                      </div>
+                      <div class="col">
+                        <label>Correo Electrónico</label>
+                        <input type="email" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="row my-2">
+                      <div class="col-md-3">
+                        <label>Responsable</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex card-header bg-white pb-1 pt-1">
+                    <h4 class="my-2">Comentarios adicionales</h4>
+                  </div>
+
+                  <div class="row card-body">
+                    <div class="row my-2">
+                      <div class="col">
+                        <textarea
+                          class="form-control"
+                          cols="30"
+                          rows="10"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <button class="btn btn-primary my-2" type="submit">
+                      <i class="mdi mdi-content-save"></i> Guardar
+                    </button>
+                  </div>
+                  <!-- end form -->
                 </div>
               </div>
+              <!-- end card -->
             </div>
             <!-- end row -->
           </div>

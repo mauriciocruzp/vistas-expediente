@@ -473,40 +473,25 @@
         <div class="content">
           <!-- Start Content-->
           <div class="container-fluid">
-            <!-- start page title -->
-            <div class="row">
-              <div class="col-12">
-                <div class="page-title-box">
-                  <h4 class="page-title">¡Bienvenido!</h4>
-                  <div class="page-title-right">
-                    <ol class="breadcrumb m-0">
-                      <li class="breadcrumb-item">
-                        <a href="javascript: void(0);">Expediente</a>
-                      </li>
-                      <li class="breadcrumb-item active">Inicio</li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end page title -->
-
-            <div class="row">
+            <div class="row mt-3">
               <div class="col-xl-12">
                 <div class="card">
                   <div
                     class="card-header bg-white mb-0 d-flex justify-content-between"
                   >
-                    <div class="d-flex">
-                      <h2 class="mb-0 mt-0">
-                        <i class="fa fa-user"></i>
+                    <div class="d-flex flex-column">
+                      <h3 class="mb-0 mt-0">
                         <span>Daniel Martinez Tamez</span>
-                      </h2>
+                      </h3>
+                      <div class="d-flex">
+                        <h6 class="my-auto"><span>34 años </span></h6>
+                        <h6 class="my-auto mx-2">74 kg</h6>
+                      </div>
                     </div>
                     <div>
                       <button class="btn btn-primary">
                         <i class="fa fa-print"></i>
-                        Expediente clínico
+                        Imprimir expediente
                       </button>
                     </div>
                   </div>
@@ -515,11 +500,43 @@
 
               <div class="col-12">
                 <div class="card">
+                  <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link" href="datos_personales.html"
+                          >Datos personales</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="nueva_consulta.html"
+                          >Consultas</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="antecedentes.html"
+                          >Antecedentes
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"
+                          >Valoraciones</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="vacunas.html">Vacunas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"
+                          >Anotaciones médicas</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                   <div
                     class="d-flex card-header bg-white align-items-center pb-1 pt-1"
                   >
                     <i class="mdi mdi-family-tree mdi-24px me-1 text-dark"></i>
-                    <h3 class="mb-0 mt-0">Antecedentes Heredo-Familiares</h3>
+                    <h4 class="mb-0 mt-0">Antecedentes Heredo-Familiares</h4>
                   </div>
 
                   <div class="card-body">
@@ -1473,9 +1490,11 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card mb-0">
-                      <div class="card-header">Comentarios Adicionales</div>
+                    <div class="mb-0">
                       <div class="col-lg-12">
+                        <label for="input1" class="form-label fs-5"
+                          >Comentarios adicionales</label
+                        >
                         <textarea
                           class="form-control"
                           id="exampleFormControlTextarea1"
@@ -1484,18 +1503,13 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              <div class="col-12">
-                <div class="card">
                   <div
                     class="d-flex card-header bg-white align-items-center pb-1 pt-1"
                   >
                     <i class="mdi mdi-family-tree mdi-24px me-1 text-dark"></i>
-                    <h3 class="mb-0 mt-0">
+                    <h4 class="mb-0 mt-0">
                       Antecedentes Personales Patológicos
-                    </h3>
+                    </h4>
                   </div>
 
                   <div class="card-body">
@@ -2058,9 +2072,11 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card mb-0">
-                      <div class="card-header">Comentarios Adicionales</div>
+                    <div class="mb-0">
                       <div class="col-lg-12">
+                        <label for="input1" class="form-label fs-5"
+                          >Comentarios adicionales</label
+                        >
                         <textarea
                           class="form-control"
                           id="exampleFormControlTextarea1"
@@ -2069,18 +2085,13 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              <div class="col-12">
-                <div class="card">
                   <div
                     class="d-flex card-header bg-white align-items-center pb-1 pt-1"
                   >
                     <i class="mdi mdi-family-tree mdi-24px me-1 text-dark"></i>
-                    <h3 class="mb-0 mt-0">
+                    <h4 class="mb-0 mt-0">
                       Antecedentes Personales No Patológicos
-                    </h3>
+                    </h4>
                   </div>
 
                   <div class="card-body">
@@ -2092,618 +2103,597 @@
                       ></textarea>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="col-12">
-              <div class="card">
-                <div
-                  class="d-flex card-header bg-white align-items-center pb-1 pt-1"
-                >
-                  <i class="mdi mdi-family-tree mdi-24px me-1 text-dark"></i>
-                  <h3 class="mb-0 mt-0">Antecedentes Gineco-obstétricos</h3>
-                </div>
-
-                <div class="card-body">
-                  <div class="col-lg-4 mb-3">
-                    <label for="input1" class="form-label fs-5 text-dark"
-                      >Menarquia</label
-                    >
-                    <input type="text" class="form-control" id="input1" />
-                  </div>
-                  <label for="input1" class="form-label fs-4 text-dark"
-                    >Características de la menstruación</label
+                  <div
+                    class="d-flex card-header bg-white align-items-center pb-1 pt-1"
                   >
-                  <div>
-                    <div class="row">
-                      <div class="col-lg-3 col-md-6 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Duración (días)</label
-                        >
-                        <input type="text" class="form-control" id="input1" />
-                      </div>
-                      <div class="col-lg-3 col-md-6 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Cantidad de sangre</label
-                        >
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>No especificado</option>
-                          <option value="1">Poca</option>
-                          <option value="2">Moderada</option>
-                          <option value="3">Abundante</option>
-                        </select>
-                      </div>
-                      <div class="col-lg-3 col-md-6 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Frecuencia</label
-                        >
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>No especificado</option>
-                          <option value="1">Poligomenorrea</option>
-                          <option value="2">Oligomenorrea</option>
-                          <option value="3">Amenorrea</option>
-                        </select>
-                      </div>
-                      <div class="col-lg-3 col-md-6 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Presencia de Dolor</label
-                        >
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>No</option>
-                          <option value="1">Si</option>
-                        </select>
-                      </div>
-                    </div>
-                    <label for="input1" class="form-label fs-5"
-                      >Presencia de otras secreciones vaginales</label
-                    >
-                    <textarea
-                      class="form-control mb-3"
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                    ></textarea>
+                    <i class="mdi mdi-family-tree mdi-24px me-1 text-dark"></i>
+                    <h4 class="mb-0 mt-0">Antecedentes Gineco-obstétricos</h4>
                   </div>
 
-                  <label for="input1" class="form-label fs-4 text-dark"
-                    >Características de la menstruación</label
-                  >
-                  <div>
-                    <div class="row">
-                      <div class="col-lg-4 col-md-4 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Vida sexual activa</label
-                        >
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>No</option>
-                          <option value="1">Si</option>
-                        </select>
-                      </div>
-                      <div class="col-lg-4 col-md-4 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Edad en la que empezó la vida sexual activa</label
-                        >
-                        <input type="text" class="form-control" id="input1" />
-                      </div>
-                      <div class="col-lg-4 col-md-4 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Num. de compañeros</label
-                        >
-                        <input type="text" class="form-control" id="input1" />
-                      </div>
-                      <div class="col-lg-6 col-md-6 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Método anticonceptivo</label
-                        >
-                        <input type="text" class="form-control" id="input1" />
-                      </div>
-                      <div class="col-lg-6 col-md-6 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Relaciones</label
-                        >
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>No</option>
-                          <option value="1">Si</option>
-                        </select>
-                      </div>
+                  <div class="card-body">
+                    <div class="col-lg-4 mb-3">
+                      <label for="input1" class="form-label fs-5 text-dark"
+                        >Menarquia</label
+                      >
+                      <input type="text" class="form-control" id="input1" />
                     </div>
-                  </div>
-
-                  <label for="input1" class="form-label fs-5"
-                    >Enfermedades de transmisión sexual</label
-                  >
-                  <textarea
-                    class="form-control mb-3"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                  ></textarea>
-
-                  <label for="input1" class="form-label fs-4 text-dark"
-                    >Información de embarazos previos</label
-                  >
-                  <div>
-                    <div class="row">
-                      <div class="col-lg-3 col-md-6 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Gestacion</label
-                        >
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Ninguno</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                          <option value="10">9 o más</option>
-                        </select>
-                      </div>
-                      <div class="col-lg-3 col-md-6 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Partos</label
-                        >
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Ninguno</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                          <option value="10">9 o más</option>
-                        </select>
-                      </div>
-                      <div class="col-lg-3 col-md-6 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Abortos</label
-                        >
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Ninguno</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                          <option value="10">9 o más</option>
-                        </select>
-                      </div>
-                      <div class="col-lg-3 col-md-6 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Cesáreas</label
-                        >
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Ninguno</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                          <option value="10">9 o más</option>
-                        </select>
-                      </div>
-                    </div>
-                    <label for="input1" class="form-label fs-5"
-                      >Comentarios adicionales</label
+                    <label for="input1" class="form-label fs-4 text-dark"
+                      >Características de la menstruación</label
                     >
-                    <textarea
-                      class="form-control"
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                    ></textarea>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="card">
-                <div
-                  class="d-flex card-header bg-white align-items-center pb-1 pt-1"
-                >
-                  <i class="mdi mdi-family-tree mdi-24px me-1 text-dark"></i>
-                  <h3 class="mb-0 mt-0">Antecedentes Neonatales</h3>
-                </div>
-
-                <div class="card-body">
-                  <label for="input1" class="form-label fs-4 text-dark"
-                    >Datos de la mamá</label
-                  >
-                  <div>
-                    <div class="row">
-                      <div class="col-lg-3 col-md-6 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Gestacion</label
-                        >
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Ninguno</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                          <option value="10">9 o más</option>
-                        </select>
-                      </div>
-                      <div class="col-lg-3 col-md-6 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Partos</label
-                        >
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Ninguno</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                          <option value="10">9 o más</option>
-                        </select>
-                      </div>
-                      <div class="col-lg-3 col-md-6 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Abortos</label
-                        >
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Ninguno</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                          <option value="10">9 o más</option>
-                        </select>
-                      </div>
-                      <div class="col-lg-3 col-md-6 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Cesáreas</label
-                        >
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Ninguno</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                          <option value="10">9 o más</option>
-                        </select>
-                      </div>
-                    </div>
-                    <label for="input1" class="form-label fs-5"
-                      >Comentarios adicionales</label
-                    >
-                    <textarea
-                      class="form-control mb-3"
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                    ></textarea>
-                  </div>
-
-                  <label for="input1" class="form-label fs-4 text-dark"
-                    >Datos al nacer</label
-                  >
-                  <div>
-                    <div class="row">
-                      <div class="col-lg-4 col-md-4 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Semana de gestación (Semanas)</label
-                        >
-                        <input type="text" class="form-control" id="input1" />
-                      </div>
-                      <div class="col-lg-8 col-md-8 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Hospital de nacimiento</label
-                        >
-                        <input type="text" class="form-control" id="input1" />
-                      </div>
-                    </div>
-                    <label for="input1" class="form-label fs-5"
-                      >Complicaciones al nacimiento</label
-                    >
-                    <textarea
-                      class="form-control mb-3"
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                    ></textarea>
-                    <div class="row">
-                      <div class="col-lg-4 col-md-4 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Reanimación</label
-                        >
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>NInguna</option>
-                          <option value="1">Oxígeno</option>
-                          <option value="2">PPI</option>
-                          <option value="3">CPAP</option>
-                          <option value="4">Intubación</option>
-                          <option value="5">Compresiones</option>
-                          <option value="6">EscSurfactanteaza</option>
-                          <option value="7">Adrenalina</option>
-                        </select>
-                      </div>
-                      <div class="col-lg-8 col-md-8 mb-3">
-                        <label for="input1" class="form-label fs-5"
-                          >Terapias utilizadas</label
-                        >
-                        <input type="text" class="form-control" id="input1" />
-                      </div>
-                      <div class="col-md-12">
-                        <div class="row">
-                          <div class="col-md-2 mb-3">
-                            <label for="input1" class="form-label fs-5"
-                              >Peso al nacer</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="KG"
-                            />
-                          </div>
-                          <div class="col-md-2 mb-3">
-                            <label for="input1" class="form-label fs-5"
-                              >Talla al nacer</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="CM"
-                            />
-                          </div>
-                          <div class="col-md-2 mb-3">
-                            <label for="input1" class="form-label fs-5"
-                              >Perimeter Cefálico</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="CM"
-                            />
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <label for="input1" class="form-label fs-5"
-                              >Apgar 1 min</label
-                            >
-                            <select
-                              class="form-select"
-                              aria-label="Default select example"
-                            >
-                              <option selected>0</option>
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
-                              <option value="10">10</option>
-                            </select>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <label for="input1" class="form-label fs-5"
-                              >Apgar 5 min</label
-                            >
-                            <select
-                              class="form-select"
-                              aria-label="Default select example"
-                            >
-                              <option selected>0</option>
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
-                              <option value="10">10</option>
-                            </select>
-                          </div>
+                    <div>
+                      <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Duración (días)</label
+                          >
+                          <input type="text" class="form-control" id="input1" />
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Cantidad de sangre</label
+                          >
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>No especificado</option>
+                            <option value="1">Poca</option>
+                            <option value="2">Moderada</option>
+                            <option value="3">Abundante</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Frecuencia</label
+                          >
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>No especificado</option>
+                            <option value="1">Poligomenorrea</option>
+                            <option value="2">Oligomenorrea</option>
+                            <option value="3">Amenorrea</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Presencia de Dolor</label
+                          >
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>No</option>
+                            <option value="1">Si</option>
+                          </select>
                         </div>
                       </div>
-                      <label for="input1" class="form-label fs-4 text-dark"
-                        >Alimentacion</label
+                      <label for="input1" class="form-label fs-5"
+                        >Presencia de otras secreciones vaginales</label
                       >
+                      <textarea
+                        class="form-control mb-3"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                      ></textarea>
+                    </div>
 
-                      <div class="col-md-12">
-                        <div class="row">
-                          <div class="col-md-4 mb-3">
-                            <label for="input1" class="form-label fs-5"
-                              >Alimentado</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="input1"
-                            />
-                          </div>
-                          <div class="col-md-4 mb-3">
-                            <label for="input1" class="form-label fs-5"
-                              >Formula actual</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="input1"
-                            />
-                          </div>
-                          <div class="col-md-4 mb-3">
-                            <label for="input1" class="form-label fs-5"
-                              >Otras Formulas</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="input1"
-                            />
-                          </div>
+                    <label for="input1" class="form-label fs-4 text-dark"
+                      >Características de la menstruación</label
+                    >
+                    <div>
+                      <div class="row">
+                        <div class="col-lg-4 col-md-4 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Vida sexual activa</label
+                          >
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>No</option>
+                            <option value="1">Si</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Edad en la que empezó la vida sexual activa</label
+                          >
+                          <input type="text" class="form-control" id="input1" />
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Num. de compañeros</label
+                          >
+                          <input type="text" class="form-control" id="input1" />
+                        </div>
+                        <div class="col-lg-6 col-md-6 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Método anticonceptivo</label
+                          >
+                          <input type="text" class="form-control" id="input1" />
+                        </div>
+                        <div class="col-lg-6 col-md-6 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Relaciones</label
+                          >
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>No</option>
+                            <option value="1">Si</option>
+                          </select>
                         </div>
                       </div>
+                    </div>
 
-                      <label for="input1" class="form-label fs-4 text-dark"
-                        >Tamizaje</label
+                    <label for="input1" class="form-label fs-5"
+                      >Enfermedades de transmisión sexual</label
+                    >
+                    <textarea
+                      class="form-control mb-3"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                    ></textarea>
+
+                    <label for="input1" class="form-label fs-4 text-dark"
+                      >Información de embarazos previos</label
+                    >
+                    <div>
+                      <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Gestacion</label
+                          >
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Ninguno</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">9 o más</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Partos</label
+                          >
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Ninguno</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">9 o más</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Abortos</label
+                          >
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Ninguno</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">9 o más</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Cesáreas</label
+                          >
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Ninguno</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">9 o más</option>
+                          </select>
+                        </div>
+                      </div>
+                      <label for="input1" class="form-label fs-5"
+                        >Comentarios adicionales</label
                       >
+                      <textarea
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex card-header bg-white align-items-center pb-1 pt-1"
+                  >
+                    <i class="mdi mdi-family-tree mdi-24px me-1 text-dark"></i>
+                    <h4 class="mb-0 mt-0">Antecedentes Neonatales</h4>
+                  </div>
 
-                      <div class="col-md-12">
-                        <div class="row">
-                          <div class="col-md-4 mb-3">
-                            <label for="input1" class="form-label fs-5"
-                              >Tamizaje</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="input1"
-                            />
-                          </div>
-                          <div class="col-md-8 mb-3">
-                            <label for="input1" class="form-label fs-5"
-                              >Alteraciones encontrados</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="input1"
-                            />
+                  <div class="card-body">
+                    <label for="input1" class="form-label fs-4 text-dark"
+                      >Datos de la mamá</label
+                    >
+                    <div>
+                      <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Gestacion</label
+                          >
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Ninguno</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">9 o más</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Partos</label
+                          >
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Ninguno</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">9 o más</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Abortos</label
+                          >
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Ninguno</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">9 o más</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Cesáreas</label
+                          >
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Ninguno</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">9 o más</option>
+                          </select>
+                        </div>
+                      </div>
+                      <label for="input1" class="form-label fs-5"
+                        >Comentarios adicionales</label
+                      >
+                      <textarea
+                        class="form-control mb-3"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                      ></textarea>
+                    </div>
+
+                    <label for="input1" class="form-label fs-4 text-dark"
+                      >Datos al nacer</label
+                    >
+                    <div>
+                      <div class="row">
+                        <div class="col-lg-4 col-md-4 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Semana de gestación (Semanas)</label
+                          >
+                          <input type="text" class="form-control" id="input1" />
+                        </div>
+                        <div class="col-lg-8 col-md-8 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Hospital de nacimiento</label
+                          >
+                          <input type="text" class="form-control" id="input1" />
+                        </div>
+                      </div>
+                      <label for="input1" class="form-label fs-5"
+                        >Complicaciones al nacimiento</label
+                      >
+                      <textarea
+                        class="form-control mb-3"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                      ></textarea>
+                      <div class="row">
+                        <div class="col-lg-4 col-md-4 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Reanimación</label
+                          >
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>NInguna</option>
+                            <option value="1">Oxígeno</option>
+                            <option value="2">PPI</option>
+                            <option value="3">CPAP</option>
+                            <option value="4">Intubación</option>
+                            <option value="5">Compresiones</option>
+                            <option value="6">EscSurfactanteaza</option>
+                            <option value="7">Adrenalina</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-8 col-md-8 mb-3">
+                          <label for="input1" class="form-label fs-5"
+                            >Terapias utilizadas</label
+                          >
+                          <input type="text" class="form-control" id="input1" />
+                        </div>
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-2 mb-3">
+                              <label for="input1" class="form-label fs-5"
+                                >Peso al nacer</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="KG"
+                              />
+                            </div>
+                            <div class="col-md-2 mb-3">
+                              <label for="input1" class="form-label fs-5"
+                                >Talla al nacer</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="CM"
+                              />
+                            </div>
+                            <div class="col-md-2 mb-3">
+                              <label for="input1" class="form-label fs-5"
+                                >Perimeter Cefálico</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="CM"
+                              />
+                            </div>
+                            <div class="col-md-3 mb-3">
+                              <label for="input1" class="form-label fs-5"
+                                >Apgar 1 min</label
+                              >
+                              <select
+                                class="form-select"
+                                aria-label="Default select example"
+                              >
+                                <option selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                              <label for="input1" class="form-label fs-5"
+                                >Apgar 5 min</label
+                              >
+                              <select
+                                class="form-select"
+                                aria-label="Default select example"
+                              >
+                                <option selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                            </div>
                           </div>
                         </div>
                         <label for="input1" class="form-label fs-4 text-dark"
-                          >Otras observaciones neonatales</label
+                          >Alimentacion</label
                         >
-                        <textarea
-                          class="form-control"
-                          id="exampleFormControlTextarea1"
-                          rows="3"
-                        ></textarea>
+
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-4 mb-3">
+                              <label for="input1" class="form-label fs-5"
+                                >Alimentado</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="input1"
+                              />
+                            </div>
+                            <div class="col-md-4 mb-3">
+                              <label for="input1" class="form-label fs-5"
+                                >Formula actual</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="input1"
+                              />
+                            </div>
+                            <div class="col-md-4 mb-3">
+                              <label for="input1" class="form-label fs-5"
+                                >Otras Formulas</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="input1"
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <label for="input1" class="form-label fs-4 text-dark"
+                          >Tamizaje</label
+                        >
+
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-4 mb-3">
+                              <label for="input1" class="form-label fs-5"
+                                >Tamizaje</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="input1"
+                              />
+                            </div>
+                            <div class="col-md-8 mb-3">
+                              <label for="input1" class="form-label fs-5"
+                                >Alteraciones encontrados</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="input1"
+                              />
+                            </div>
+                          </div>
+                          <label for="input1" class="form-label fs-4 text-dark"
+                            >Otras observaciones neonatales</label
+                          >
+                          <textarea
+                            class="form-control"
+                            id="exampleFormControlTextarea1"
+                            rows="3"
+                          ></textarea>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="card">
-                <div
-                  class="d-flex card-header bg-white align-items-center pb-1 pt-1"
-                >
-                  <i class="mdi mdi-family-tree mdi-24px me-1 text-dark"></i>
-                  <h3 class="mb-0 mt-0">Alergias</h3>
-                </div>
-
-                <div class="card-body">
-                  <textarea
-                    class="form-control mb-3"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                  ></textarea>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="card">
-                <div
-                  class="d-flex card-header bg-white align-items-center pb-1 pt-1"
-                >
-                  <i class="mdi mdi-family-tree mdi-24px me-1 text-dark"></i>
-                  <h3 class="mb-0 mt-0">Medicamentos usados</h3>
-                </div>
-
-                <div class="card-body">
-                  <label for="input1" class="form-label fs-5 text-dark"
-                    >Medicamentos que el paciente ha usado en los últimos seis meses. Para cada medicamento indique: Nombre, duración y dósis.</label
+                  <div
+                    class="d-flex card-header bg-white align-items-center pb-1 pt-1"
                   >
-                  <textarea
-                    class="form-control mb-3"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                  ></textarea>
-                </div>
-              </div>
-            </div>
+                    <i class="mdi mdi-family-tree mdi-24px me-1 text-dark"></i>
+                    <h4 class="mb-0 mt-0">Alergias</h4>
+                  </div>
 
-            <div class="col-12">
-              <div class="card">
-                <div class="card-body">
-                  <button
-                    type="button"
-                    class="btn btn-primary waves-effect waves-light"
+                  <div class="card-body">
+                    <textarea
+                      class="form-control mb-3"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <div
+                    class="d-flex card-header bg-white align-items-center pb-1 pt-1"
                   >
-                  <i class="mdi mdi-content-save"></i> Guardar
-                  </button>
+                    <i class="mdi mdi-family-tree mdi-24px me-1 text-dark"></i>
+                    <h4 class="mb-0 mt-0">Medicamentos usados</h4>
+                  </div>
+
+                  <div class="card-body">
+                    <label for="input1" class="form-label fs-5 text-dark"
+                      >Medicamentos que el paciente ha usado en los últimos seis
+                      meses. Para cada medicamento indique: Nombre, duración y
+                      dósis.</label
+                    >
+                    <textarea
+                      class="form-control mb-3"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                    ></textarea>
+                  </div>
+
+                  <div class="card-body">
+                    <button
+                      type="button"
+                      class="btn btn-primary waves-effect waves-light"
+                    >
+                      <i class="mdi mdi-content-save"></i> Guardar
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
