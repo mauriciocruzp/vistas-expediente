@@ -455,198 +455,236 @@
             <!-- start page title -->
             <!-- end page title -->
 
-            <div class="row">
-              <div class="card mt-3">
-                <div class="row-cols-1 row-xl-6 row-lg-4">
-                  <h4>
-                    <i class="mdi mdi-24px mdi-account"></i>
-                    <span>Daniel Martinez Tamez</span>
-                  </h4>
+            <div class="row mt-3">
+              <div class="col-xl-12">
+                <div class="card">
+                  <div
+                    class="card-header bg-white mb-0 d-flex justify-content-between"
+                  >
+                    <div class="d-flex flex-column">
+                      <h3 class="mb-0 mt-0">
+                        <span>Daniel Martinez Tamez</span>
+                      </h3>
+                      <div class="d-flex">
+                        <h6 class="my-auto"><span>34 años </span></h6>
+                        <h6 class="my-auto mx-2">74 kg</h6>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="btn btn-primary">
+                        <i class="fa fa-print"></i>
+                        Imprimir expediente
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div class="card">
-                <form novalidate>
-                  <div class="d-flex card-header bg-white pb-1 pt-1">
-                    <h3 class="my-2">Vacunación del adulto</h3>
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link" href="datos_personales.html"
+                          >Datos personales</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="nueva_consulta.html"
+                          >Consultas</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="antecedentes.html"
+                          >Antecedentes
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"
+                          >Valoraciones</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="vacunas.html"
+                          >Vacunas</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"
+                          >Anotaciones médicas</a
+                        >
+                      </li>
+                    </ul>
                   </div>
-                  <div class="row card-body">
-                    <div class="row my-2">
-                      <div class="card-header bg-white pb-1 pt-1">
-                        <h5 class="">MMR</h5>
-                      </div>
-                      <div class="row card-body">
-                        <div class="row my-2">
-                          <div class="col d-flex align-items-center">
-                            <p>
-                              <strong>Previene: </strong> Sarampion,
-                              Paperas,Rubeola
-                            </p>
-                          </div>
-                          <div class="col">
-                            <label>Primera(Entre los 19 y 49 años)</label>
-                            <input type="date" class="form-control" />
-                          </div>
-                          <div class="col">
-                            <label>Segunda</label>
-                            <input type="date" class="form-control" />
-                          </div>
+                  <div class="card-header bg-white">
+                    <ul class="nav nav-pills card-header-pills">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="vacunas.html"
+                          >Adulto</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="vacunas_inf.html">Infante</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-header bg-white pb-1 pt-1">
+                      <h5 class="">MMR</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="row my-2">
+                        <div class="col d-flex align-items-center">
+                          <p>
+                            <strong>Previene: </strong> Sarampion,
+                            Paperas,Rubeola
+                          </p>
+                        </div>
+                        <div class="col">
+                          <label>Primera(Entre los 19 y 49 años)</label>
+                          <input type="date" class="form-control" />
+                        </div>
+                        <div class="col">
+                          <label>Segunda</label>
+                          <input type="date" class="form-control" />
                         </div>
                       </div>
                     </div>
-                    <div class="row my-2">
-                      <div class="card-header bg-white pb-1 pt-1">
-                        <h5 class="">TD</h5>
-                      </div>
-                      <div class="row card-body">
-                        <div class="row my-2">
-                          <div class="col d-flex align-items-center">
-                            <p><strong>Previene: </strong> Tétanos/Difteria</p>
-                          </div>
-                          <div class="col">
-                            <label>Primera(Cada 10 años)</label>
-                            <input type="date" class="form-control" />
-                          </div>
-                          <div class="col">
-                            <label>Segunda</label>
-                            <input type="date" class="form-control" />
-                            <br />
-                            <label>Tercera</label>
-                            <input type="date" class="form-control" />
-                          </div>
+                    <div class="card-header bg-white pb-1 pt-1">
+                      <h5>TD</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="row my-2">
+                        <div class="col d-flex align-items-center">
+                          <p><strong>Previene: </strong> Tétanos/Difteria</p>
+                        </div>
+                        <div class="col">
+                          <label>Primera(Cada 10 años)</label>
+                          <input type="date" class="form-control" />
+                        </div>
+                        <div class="col">
+                          <label>Segunda</label>
+                          <input type="date" class="form-control" />
+                          <br />
+                          <label>Tercera</label>
+                          <input type="date" class="form-control" />
                         </div>
                       </div>
                     </div>
-                    <div class="row my-2">
-                      <div class="card-header bg-white pb-1 pt-1">
-                        <h5 class="">Influenza</h5>
-                      </div>
-                      <div class="row card-body">
-                        <div class="row my-2">
-                          <div class="col d-flex align-items-center">
-                            <p><strong>Previene: </strong> Gripe</p>
-                          </div>
-                          <div class="col">
-                            <label>Primera(Aplicación anual)</label>
-                            <input type="date" class="form-control" />
-                          </div>
-                          <div class="col">
-                            <label>Segunda</label>
-                            <input type="date" class="form-control" />
-                            <br />
-                            <label>Tercera</label>
-                            <input type="date" class="form-control" />
-                          </div>
+                    <div class="card-header bg-white pb-1 pt-1">
+                      <h5 class="">Influenza</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="row my-2">
+                        <div class="col d-flex align-items-center">
+                          <p><strong>Previene: </strong> Gripe</p>
+                        </div>
+                        <div class="col">
+                          <label>Primera(Aplicación anual)</label>
+                          <input type="date" class="form-control" />
+                        </div>
+                        <div class="col">
+                          <label>Segunda</label>
+                          <input type="date" class="form-control" />
+                          <br />
+                          <label>Tercera</label>
+                          <input type="date" class="form-control" />
                         </div>
                       </div>
                     </div>
-                    <div class="row my-2">
-                      <div class="card-header bg-white pb-1 pt-1">
-                        <h5 class="">Neumococo</h5>
-                      </div>
-                      <div class="row card-body">
-                        <div class="row my-2">
-                          <div class="col d-flex align-items-center">
-                            <p><strong>Previene: </strong> Neumococo</p>
-                          </div>
-                          <div class="col"></div>
-                          <div class="col">
-                            <label>Única(Mayores de 65 años)</label>
-                            <input type="date" class="form-control" />
-                          </div>
+                    <div class="card-header bg-white pb-1 pt-1">
+                      <h5 class="">Neumococo</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="row my-2">
+                        <div class="col d-flex align-items-center">
+                          <p><strong>Previene: </strong> Neumococo</p>
+                        </div>
+                        <div class="col"></div>
+                        <div class="col">
+                          <label>Única(Mayores de 65 años)</label>
+                          <input type="date" class="form-control" />
                         </div>
                       </div>
                     </div>
-                    <div class="row my-2">
-                      <div class="card-header bg-white pb-1 pt-1">
-                        <h5 class="">HBV</h5>
-                      </div>
-                      <div class="row card-body">
-                        <div class="row my-2">
-                          <div class="col d-flex align-items-center">
-                            <p><strong>Previene: </strong> Hepatitis B</p>
-                          </div>
-                          <div class="col">
-                            <label>Primera(Inicial)</label>
-                            <input type="date" class="form-control" />
-                          </div>
-                          <div class="col">
-                            <label>Segunda(1 mes después)</label>
-                            <input type="date" class="form-control" />
-                            <br />
-                            <label>Tercera(6 meses después)</label>
-                            <input type="date" class="form-control" />
-                          </div>
+                    <div class="card-header bg-white pb-1 pt-1">
+                      <h5 class="">HBV</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="row my-2">
+                        <div class="col d-flex align-items-center">
+                          <p><strong>Previene: </strong> Hepatitis B</p>
+                        </div>
+                        <div class="col">
+                          <label>Primera(Inicial)</label>
+                          <input type="date" class="form-control" />
+                        </div>
+                        <div class="col">
+                          <label>Segunda(1 mes después)</label>
+                          <input type="date" class="form-control" />
+                          <br />
+                          <label>Tercera(6 meses después)</label>
+                          <input type="date" class="form-control" />
                         </div>
                       </div>
                     </div>
-                    <div class="row my-2">
-                      <div class="card-header bg-white pb-1 pt-1">
-                        <h5 class="">HAV</h5>
-                      </div>
-                      <div class="row card-body">
-                        <div class="row my-2">
-                          <div class="col d-flex align-items-center">
-                            <p><strong>Previene: </strong> Hepatitis A</p>
-                          </div>
-                          <div class="col">
-                            <label>Primera(Inicial)</label>
-                            <input type="date" class="form-control" />
-                          </div>
-                          <div class="col">
-                            <label>Segunda(6 meses después)</label>
-                            <input type="date" class="form-control" />
-                          </div>
+                    <div class="card-header bg-white pb-1 pt-1">
+                      <h5 class="">HAV</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="row my-2">
+                        <div class="col d-flex align-items-center">
+                          <p><strong>Previene: </strong> Hepatitis A</p>
+                        </div>
+                        <div class="col">
+                          <label>Primera(Inicial)</label>
+                          <input type="date" class="form-control" />
+                        </div>
+                        <div class="col">
+                          <label>Segunda(6 meses después)</label>
+                          <input type="date" class="form-control" />
                         </div>
                       </div>
                     </div>
-                    <div class="row my-2">
-                      <div class="card-header bg-white pb-1 pt-1">
-                        <h5 class="">Varicela</h5>
-                      </div>
-                      <div class="row card-body">
-                        <div class="row my-2">
-                          <div class="col d-flex align-items-center">
-                            <p><strong>Previene: </strong> Varicela</p>
-                          </div>
-                          <div class="col">
-                            <label>Primera(Inicial)</label>
-                            <input type="date" class="form-control" />
-                          </div>
-                          <div class="col">
-                            <label>Segunda(4 semanas después)</label>
-                            <input type="date" class="form-control" />
-                          </div>
+                    <div class="card-header bg-white pb-1 pt-1">
+                      <h5 class="">Varicela</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="row my-2">
+                        <div class="col d-flex align-items-center">
+                          <p><strong>Previene: </strong> Varicela</p>
+                        </div>
+                        <div class="col">
+                          <label>Primera(Inicial)</label>
+                          <input type="date" class="form-control" />
+                        </div>
+                        <div class="col">
+                          <label>Segunda(4 semanas después)</label>
+                          <input type="date" class="form-control" />
                         </div>
                       </div>
                     </div>
-                    <div class="row my-2">
-                      <div class="card-header bg-white pb-1 pt-1">
-                        <h5 class="">Otras vacunas</h5>
-                      </div>
-                      <div class="row card-body">
-                        <div class="row my-2">
-                          <div class="col">
-                            <textarea
+                    <div class="card-header bg-white pb-1 pt-1">
+                      <h5 class="">Otras vacunas</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="row my-2">
+                        <div class="col">
+                          <textarea
                             class="form-control"
                             cols="30"
                             rows="10"
                           ></textarea>
-                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="row card-body">
-                      <div class="row my-2">
-                        <div class="col">
-                          <button class="btn btn-primary my-2" type="submit">
-                            <i class="fa fa-fw fa-plus-circle"></i>Guardar
-                          </button>
-                        </div>
-                      </div>
+                    <div class="card-body">
+                      <button class="btn btn-primary my-2" type="submit">
+                        <i class="mdi mdi-content-save"></i> Guardar
+                      </button>
                     </div>
                   </div>
-                </form>
+                </div>
               </div>
             </div>
           </div>
