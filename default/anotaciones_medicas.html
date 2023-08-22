@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <title>Pacientes | Expediente clínico</title>
+    <title>Anotaciones médicas | Expediente clínico</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- App favicon -->
@@ -518,7 +518,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);"
+                        <a class="nav-link" href="valoraciones.html"
                           >Valoraciones</a
                         >
                       </li>
@@ -526,42 +526,67 @@
                         <a class="nav-link" href="vacunas.html">Vacunas</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active" href="javascript:void(0);"
+                        <a class="nav-link active" href="anotaciones_medicas.html"
                           >Anotaciones médicas</a
                         >
                       </li>
                     </ul>
                   </div>
-                  <div
-                    class="d-flex card-header bg-white align-items-center pb-1 pt-1"
-                  >
-                    <i class="mdi mdi-pen mdi-24px me-1 text-dark"></i>
-                    <h4 class="mb-0 mt-0">Anotaciones médicas</h4>
-                  </div>
-
                   <div class="card-body">
                     <div class="row">
                       <div class="col-md-6">
                         <h4>Escribir Anotación</h4>
                         <form id="anotacionForm">
                           <div class="mb-3">
-                            <textarea class="form-control" id="anotacion" rows="5"></textarea>
+                            <textarea
+                              class="form-control"
+                              id="anotacion"
+                              rows="5"
+                            ></textarea>
                           </div>
-                          <button type="submit" class="btn btn-primary">Guardar Anotación</button>
+                          <button type="submit" class="btn btn-primary">
+                            <i class="mdi mdi-content-save"></i> Guardar
+                          </button>
                         </form>
                       </div>
                       <div class="col-md-6">
                         <h4>Anotaciones Guardadas</h4>
                         <ul class="list-group" id="anotacionesList">
                           <li class="list-group-item">
-                            <span class="fw-bold">Fecha: 2023-08-21 15:30</span><br>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-                            <button class="btn btn-danger btn-sm ms-2">Eliminar</button>
+                            <span class="fw-bold">Fecha: 2023-08-21 15:30</span
+                            ><br />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit...
+                            <button class="btn btn-danger btn-sm ms-2">
+                              Eliminar
+                            </button>
                           </li>
                           <li class="list-group-item">
-                            <span class="fw-bold">Fecha: 2023-08-20 12:45</span><br>
-                            Consectetur adipiscing elit, sed do eiusmod tempor inc...
-                            <button class="btn btn-danger btn-sm ms-2"><i class="mdi mdi-delete"></i></button>
+                            <span class="fw-bold">Fecha: 2023-08-20 12:45</span
+                            ><br />
+                            Consectetur adipiscing elit, sed do eiusmod tempor
+                            inc...
+                            <button class="btn btn-danger btn-sm ms-2">
+                              Eliminar
+                            </button>
+                          </li>
+                          <li class="list-group-item">
+                            <span class="fw-bold">Fecha: 2023-08-20 12:45</span
+                            ><br />
+                            Consectetur adipiscing elit, sed do eiusmod tempor
+                            inc...
+                            <button class="btn btn-danger btn-sm ms-2">
+                              Eliminar
+                            </button>
+                          </li>
+                          <li class="list-group-item">
+                            <span class="fw-bold">Fecha: 2023-08-20 12:45</span
+                            ><br />
+                            Consectetur adipiscing elit, sed do eiusmod tempor
+                            inc...
+                            <button class="btn btn-danger btn-sm ms-2">
+                              Eliminar
+                            </button>
                           </li>
                           <!-- Agregar más elementos de la lista según las anotaciones precargadas -->
                         </ul>
