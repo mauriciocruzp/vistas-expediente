@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <title>Expediente clínico</title>
+    <title>Inicio | Expediente clínico</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- App favicon -->
@@ -28,24 +28,15 @@
       id="app-default-stylesheet"
     />
 
-    <link
-      href="./assets/css/default/bootstrap-dark.min.css"
-      rel="stylesheet"
-      type="text/css"
-      id="bs-dark-stylesheet"
-    />
-    <link
-      href="./assets/css/default/app-dark.min.css"
-      rel="stylesheet"
-      type="text/css"
-      id="app-dark-stylesheet"
-    />
-
     <!-- icons -->
     <link href="./assets/css/icons.min.css" rel="stylesheet" type="text/css" />
   </head>
 
-  <body class="loading">
+  <body
+    class="loading"
+    data-layout-mode="horizontal"
+    data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "topbar": {"color": "dark"}, "showRightSidebarOnPageLoad": true}'
+  >
     <!-- Begin page -->
     <div id="wrapper">
       <!-- Topbar Start -->
@@ -125,7 +116,7 @@
                 <div class="dropdown-divider"></div>
 
                 <!-- item-->
-                <a href="default/login.html" class="dropdown-item notify-item">
+                <a href="./default/login.html" class="dropdown-item notify-item">
                   <i class="ri-logout-box-line"></i>
                   <span>Cerrar sesión</span>
                 </a>
@@ -135,38 +126,12 @@
 
           <!-- LOGO -->
           <div class="logo-box">
-            <a href="index.html" class="logo logo-dark text-center">
-              <span class="logo-sm">
-                <img
-                  src="./assets/images/logo_windsoftti.png"
-                  alt=""
-                  height="24"
-                />
-                <!-- <span class="logo-lg-text-light">Minton</span> -->
-              </span>
-              <span class="logo-lg">
-                <img
-                  src="./assets/images/logo_windsoftti.png"
-                  alt=""
-                  height="20"
-                />
-                <!-- <span class="logo-lg-text-light">M</span> -->
-              </span>
-            </a>
-
             <a href="index.html" class="logo logo-light text-center">
-              <span class="logo-sm">
-                <img
-                  src="./assets/images/logo_windsoftti.png"
-                  alt=""
-                  height="24"
-                />
-              </span>
               <span class="logo-lg">
                 <img
                   src="./assets/images/logo_windsoftti.png"
                   alt=""
-                  height="20"
+                  height="45"
                 />
               </span>
             </a>
@@ -178,7 +143,6 @@
                 <i class="fe-menu"></i>
               </button>
             </li>
-
             <li>
               <!-- Mobile menu toggle (Horizontal Layout)-->
               <a
@@ -200,316 +164,96 @@
       </div>
       <!-- end Topbar -->
 
-      <!-- ========== Left Sidebar Start ========== -->
-      <div class="left-side-menu">
-        <!-- LOGO -->
-        <div class="logo-box">
-          <a href="index.html" class="logo logo-dark text-center">
-            <span class="logo-sm">
-              <img src="./assets/images/logo-sm-dark.png" alt="" height="24" />
-              <!-- <span class="logo-lg-text-light">Minton</span> -->
-            </span>
-            <span class="logo-lg">
-              <img
-                src="./assets/images/logo_windsoftti.png"
-                alt=""
-                height="20"
-              />
-              <!-- <span class="logo-lg-text-light">M</span> -->
-            </span>
-          </a>
-
-          <a href="index.html" class="logo logo-light text-center">
-            <span class="logo-sm">
-              <img src="./assets/images/logo-sm.png" alt="" height="24" />
-            </span>
-            <span class="logo-lg">
-              <img
-                src="./assets/images/logo_windsoftti.png"
-                alt=""
-                height="45"
-              />
-            </span>
-          </a>
-        </div>
-
-        <div class="h-100" data-simplebar>
-          <!-- User box -->
-          <div class="user-box text-center">
-            <img
-              src="./assets/images/users/default-user-image.png"
-              alt="user-img"
-              title="Mat Helme"
-              class="rounded-circle avatar-md"
-            />
-            <div class="dropdown">
-              <a
-                href="#"
-                class="text-reset dropdown-toggle h5 mt-2 mb-1 d-block"
-                data-bs-toggle="dropdown"
-                >Usuario</a
-              >
-              <div class="dropdown-menu user-pro-dropdown">
-                <!-- item-->
-                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                  <i class="fe-user me-1"></i>
-                  <span>Administrar cuenta</span>
-                </a>
-
-                <!-- item-->
-                <a href="login.html" class="dropdown-item notify-item">
-                  <i class="fe-log-out me-1"></i>
-                  <span>Cerrar sesión</span>
-                </a>
-              </div>
+      <!-- Top Navbar Start -->
+      <div class="topnav">
+        <div class="container-fluid">
+          <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+            <div class="collapse navbar-collapse" id="topnav-menu-content">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle arrow-none"
+                    href="index.html"
+                  >
+                    <i class="bx bx-home-alt"></i>
+                    <span> Inicio </span>
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle arrow-none"
+                    href="#"
+                    id="topnav-patients"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="fe-users"></i> Pacientes
+                    <div class="arrow-down"></div>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="topnav-patients">
+                    <a href="./default/pacientes.html" class="dropdown-item"
+                      >Todos los pacientes</a
+                    >
+                    <a href="./default/agregar_pacientes.html" class="dropdown-item"
+                      >Agregar paciente</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle arrow-none"
+                    href="#"
+                    id="topnav-admin"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="ri-shield-user-line"></i> Administración
+                    <div class="arrow-down"></div>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="topnav-admin">
+                    <a href="./default/usuarios.html" class="dropdown-item">Usuarios</a>
+                    <a href="./default/agregar_usuarios.html" class="dropdown-item"
+                      >Agregar usuarios</a
+                    >
+                  </div>
+                </li>
+              </ul>
             </div>
-          </div>
-
-          <!--- Sidemenu -->
-          <div id="sidebar-menu">
-            <ul id="side-menu">
-              <li class="menu-title">Navegación</li>
-              <li>
-                <a href="index.html">
-                  <i class="bx bx-home-alt"></i>
-                  <span> Inicio </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#sidebarProducts"
-                  data-bs-toggle="collapse"
-                  aria-expanded="false"
-                  aria-controls="sidebarProducts"
-                >
-                  <i class="bx bx-box"></i>
-                  <span> Productos </span>
-                  <span class="menu-arrow"></span>
-                </a>
-                <div class="collapse" id="sidebarProducts">
-                  <ul class="nav-second-level">
-                    <li>
-                      <a href="#">Productos</a>
-                    </li>
-                    <li>
-                      <a href="#">Categorias</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-
-              <li>
-                <a
-                  href="#sidebarBuys"
-                  data-bs-toggle="collapse"
-                  aria-expanded="false"
-                  aria-controls="sidebarBuys"
-                >
-                  <i class="bx bx-basket"></i>
-                  <span> Compras </span>
-                  <span class="menu-arrow"></span>
-                </a>
-                <div class="collapse" id="sidebarBuys">
-                  <ul class="nav-second-level">
-                    <li>
-                      <a href="#">Proveedores</a>
-                    </li>
-                    <li>
-                      <a href="#">Nueva compra</a>
-                    </li>
-                    <li>
-                      <a href="#">Historial de compras</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-
-              <li>
-                <a
-                  href="#sidebarInventory"
-                  data-bs-toggle="collapse"
-                  aria-expanded="false"
-                  aria-controls="sidebarInventory"
-                >
-                  <i class="ri-task-line"></i>
-                  <span> Inventario </span>
-                  <span class="menu-arrow"></span>
-                </a>
-                <div class="collapse" id="sidebarInventory">
-                  <ul class="nav-second-level">
-                    <li>
-                      <a href="#">Inventario</a>
-                    </li>
-                    <li>
-                      <a href="#">Entradas directas</a>
-                    </li>
-                    <li>
-                      <a href="#">Nueva salida/consulta</a>
-                    </li>
-                    <li>
-                      <a href="#">Historial de salidas</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-
-              <li>
-                <a
-                  href="#sidebarPatients"
-                  data-bs-toggle="collapse"
-                  aria-expanded="false"
-                  aria-controls="sidebarPatients"
-                >
-                  <i class="fe-users"></i>
-                  <span> Pacientes </span>
-                  <span class="menu-arrow"></span>
-                </a>
-                <div class="collapse" id="sidebarPatients">
-                  <ul class="nav-second-level">
-                    <li>
-                      <a href="default/pacientes.html">Todos los pacientes</a>
-                    </li>
-                    <li>
-                      <a href="default/agregar_pacientes.html">Agregar paciente</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <a
-                  href="#sidebarAccountancy"
-                  data-bs-toggle="collapse"
-                  aria-expanded="false"
-                  aria-controls="sidebarAccountancy"
-                >
-                  <i class="fe-tag"></i>
-                  <span> Contabilidad </span>
-                  <span class="menu-arrow"></span>
-                </a>
-                <div class="collapse" id="sidebarAccountancy">
-                  <ul class="nav-second-level">
-                    <li>
-                      <a href="#">Finanzas</a>
-                    </li>
-                    <li>
-                      <a href="#">Egresos</a>
-                    </li>
-                    <li>
-                      <a href="#">Realizar nómina</a>
-                    </li>
-                    <li>
-                      <a href="#">Nóminas generadas</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <a
-                  href="#sidebarAdmin"
-                  data-bs-toggle="collapse"
-                  aria-expanded="false"
-                  aria-controls="sidebarAdmin"
-                >
-                  <i class="ri-shield-user-line"></i>
-                  <span> Administración </span>
-                  <span class="menu-arrow"></span>
-                </a>
-                <div class="collapse" id="sidebarAdmin">
-                  <ul class="nav-second-level">
-                    <li>
-                      <a href="default/usuarios.html">Usuarios</a>
-                    </li>
-                    <li>
-                      <a href="default/agregar_usuarios.html">Agregar usuarios</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- End Sidebar -->
-
-          <div class="clearfix"></div>
+          </nav>
         </div>
-        <!-- Sidebar -left -->
       </div>
-      <!-- Left Sidebar End -->
+      <!-- Top Navbar End -->
 
       <!-- ============================================================== -->
       <!-- Start Page Content here -->
       <!-- ============================================================== -->
 
-      <div class="content-page">
-        <div class="content">
-          <!-- Start Content-->
-          <div class="container-fluid">
-            <!-- start page title -->
-            <div class="row">
-              <div class="col-12">
-                <div class="page-title-box">
-                  <h4 class="page-title">¡Bienvenido!</h4>
-                  <div class="page-title-right">
-                    <ol class="breadcrumb m-0">
-                      <li class="breadcrumb-item">
-                        <a href="javascript: void(0);">Expediente</a>
-                      </li>
-                      <li class="breadcrumb-item active">Inicio</li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end page title -->
-          </div>
-          <!-- content -->
-
-          <!-- Footer Start -->
-          <footer class="footer">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-6">
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  &copy; Expediente clínico by
-                  <a href="https://windsoftti.com/">Windsoft TI</a>
-                </div>
-                <div class="col-md-6">
-                  <div class="text-md-end footer-links d-none d-sm-block">
-                    <a href="javascript:void(0);">Nosotros</a>
-                    <a href="javascript:void(0);">Ayuda</a>
-                    <a href="javascript:void(0);">Contáctanos</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </footer>
-          <!-- end Footer -->
-        </div>
-
-        <!-- ============================================================== -->
-        <!-- End Page content -->
-        <!-- ============================================================== -->
-      </div>
-      <!-- END wrapper -->
-
-      <!-- Vendor js -->
-      <script src="./assets/js/vendor.min.js"></script>
-
-      <!-- KNOB JS -->
-      <script src="./assets/libs/jquery-knob/jquery.knob.min.js"></script>
-      <!-- Apex js-->
-      <script src="./assets/libs/apexcharts/apexcharts.min.js"></script>
-
-      <!-- Plugins js-->
-      <script src="./assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
-      <script src="../assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
-
-      <!-- Dashboard init-->
-      <script src="./assets/js/pages/dashboard-sales.init.js"></script>
-
-      <!-- App js -->
-      <script src="./assets/js/app.min.js"></script>
+      <!-- ============================================================== -->
+      <!-- End Page content -->
+      <!-- ============================================================== -->
     </div>
+    <!-- END wrapper -->
+
+    <!-- Vendor js -->
+    <script src="./assets/js/vendor.min.js"></script>
+
+    <!-- KNOB JS -->
+    <script src="./assets/libs/jquery-knob/jquery.knob.min.js"></script>
+    <!-- Apex js-->
+    <script src="./assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Plugins js-->
+    <script src="./assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="./assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
+
+    <!-- Dashboard init-->
+    <script src="./assets/js/pages/dashboard-sales.init.js"></script>
+
+    <!-- App js -->
+    <script src="./assets/js/app.min.js"></script>
   </body>
 </html>
