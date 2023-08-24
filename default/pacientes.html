@@ -191,9 +191,11 @@
           </ul>
           <div class="clearfix"></div>
         </div>
-      </div><!-- end Topbar -->
+      </div>
+      <!-- end Topbar -->
 
-      <div class="topnav"><!-- Top Navbar Start -->
+      <div class="topnav">
+        <!-- Top Navbar Start -->
         <div class="container-fluid">
           <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
             <div class="collapse navbar-collapse" id="topnav-menu-content">
@@ -253,7 +255,8 @@
             </div>
           </nav>
         </div>
-      </div><!-- Top Navbar End -->
+      </div>
+      <!-- Top Navbar End -->
 
       <!-- ============================================================== -->
       <!-- Start Page Content here -->
@@ -271,44 +274,36 @@
                 <div class="col-12">
                   <div class="card">
                     <div class="card-body">
-                      <div class="d-flex justify-content-between">
-                        <div class="d-flex">
-                          <div>
-                            <img
-                              src="../assets/images/users/default-user-image.png"
-                              width="220px"
-                              class="img-thumbnail"
-                            />
-                          </div>
+                      <div class="d-flex justify-content-between row">
+                        <div class="d-flex col-md-7">
                           <div class="ms-1">
                             <h2 class="mb-0 mt-0">
                               <span>Daniel Martinez Tamez</span>
                             </h2>
-                            <p class="mb-0">Masculino, 2 Años de edad</p>
-                            <p class="mb-0">
-                              Vive en Ext., Col. Escobedo NL, Mexico
-                            </p>
-                            <p class="mb-0">Paciente 1</p>
+                            <p class="mb-0">Masculino, 30 años</p>
+                            <p class="mb-0">(999) 999-9999</p>
                             <p class="mb-0">Fecha Registro 06/04/2021</p>
                           </div>
                         </div>
 
-                        <div>
+                        <div class="col-md-5">
                           <div class="btn-group" role="group">
-                            <a href="datos_personales.html">
-                              <button
-                                type="button"
-                                class="btn btn-outline-secondary"
-                              >
-                                <i class="mdi mdi-file"></i>
-                                Expediente
-                              </button>
+                            <a
+                              type="button"
+                              class="btn btn-outline-secondary"
+                              href="datos_personales.html"
+                            >
+                              <i class="mdi mdi-file"></i>
+                              Expediente
                             </a>
-
-                            <button type="button" class="btn btn-primary">
+                            <a
+                              type="button"
+                              class="btn btn-primary"
+                              href="nueva_consulta.html"
+                            >
                               <i class="mdi mdi-stethoscope"></i>
                               Iniciar Consulta
-                            </button>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -324,11 +319,11 @@
                         <span>Peso (Kg)</span>
                       </div>
                       <div class="col-4 border text-center pb-1">
-                        <h1 class="fw-bold mb-0">2</h1>
+                        <h1 class="fw-bold mb-0">30</h1>
                         <span>Edad (Años)</span>
                       </div>
                       <div class="col-4 border text-center pb-1">
-                        <h1 class="fw-bold mb-0">1.60</h1>
+                        <h1 class="fw-bold mb-0">1.69</h1>
                         <span>Talla (m)</span>
                       </div>
                     </div>
@@ -343,7 +338,7 @@
                       </div>
                       <div class="col-4 border text-center py-2">
                         <p class="mb-0">Tipo Sanguíneo</p>
-                        <p class="fw-bold mb-0">NO CONOCE</p>
+                        <p class="fw-bold mb-0">O+</p>
                       </div>
                     </div>
                   </div>
@@ -354,22 +349,13 @@
                     <div
                       class="d-flex card-header bg-white align-items-center pb-1 pt-1"
                     >
-                      <i
-                        class="mdi mdi-clock-outline mdi-24px me-1 text-dark"
-                      ></i>
-                      <h3 class="mb-0 mt-0">Historial de Paciente</h3>
+                      <h3 class="">Historial de Paciente</h3>
                     </div>
 
-                    <div class="card-body ps-4">
-                      <section class="">
+                    <div class="card-body">
+                      <div style="max-height: 350px" data-simplebar>
                         <ul class="custom-timeline-with-icons">
                           <li class="custom-timeline-item mb-3">
-                            <span class="custom-timeline-icon">
-                              <i
-                                class="fas fa-clock fa-lg text-dark fa-sm fa-fw"
-                              ></i>
-                            </span>
-
                             <div class="card">
                               <div class="card-header bg-white pt-2 pb-2">
                                 <p class="mb-0">
@@ -395,13 +381,85 @@
                               </div>
                             </div>
                           </li>
-
                           <li class="custom-timeline-item mb-3">
-                            <span class="custom-timeline-icon">
-                              <i
-                                class="fas fa-clock fa-lg text-dark fa-sm fa-fw"
-                              ></i>
-                            </span>
+                            <div class="card">
+                              <div class="card-header bg-white pt-2 pb-2">
+                                <p class="mb-0">
+                                  <strong class="text-dark"
+                                    >Consulta realizada</strong
+                                  >
+                                  por
+                                  <i class="mdi mdi-stethoscope"></i>
+                                  <a class="text-primary fw-bold" href="#"
+                                    >Dr(a) Castillo</a
+                                  >
+                                </p>
+                              </div>
+                              <div class="card-body pt-1 pb-1">
+                                <div class="d-flex align-items-center">
+                                  <i class="far fa-clock mx-1 text-primary"></i>
+                                  07:26 PM
+                                  <i
+                                    class="fas fa-calendar-alt mx-1 text-primary"
+                                  ></i>
+                                  12-04-2021
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="custom-timeline-item mb-3">
+                            <div class="card">
+                              <div class="card-header bg-white pt-2 pb-2">
+                                <p class="mb-0">
+                                  <strong class="text-dark"
+                                    >Consulta realizada</strong
+                                  >
+                                  por
+                                  <i class="mdi mdi-stethoscope"></i>
+                                  <a class="text-primary fw-bold" href="#"
+                                    >Dr(a) Castillo</a
+                                  >
+                                </p>
+                              </div>
+                              <div class="card-body pt-1 pb-1">
+                                <div class="d-flex align-items-center">
+                                  <i class="far fa-clock mx-1 text-primary"></i>
+                                  07:26 PM
+                                  <i
+                                    class="fas fa-calendar-alt mx-1 text-primary"
+                                  ></i>
+                                  12-04-2021
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="custom-timeline-item mb-3">
+                            <div class="card">
+                              <div class="card-header bg-white pt-2 pb-2">
+                                <p class="mb-0">
+                                  <strong class="text-dark"
+                                    >Consulta realizada</strong
+                                  >
+                                  por
+                                  <i class="mdi mdi-stethoscope"></i>
+                                  <a class="text-primary fw-bold" href="#"
+                                    >Dr(a) Castillo</a
+                                  >
+                                </p>
+                              </div>
+                              <div class="card-body pt-1 pb-1">
+                                <div class="d-flex align-items-center">
+                                  <i class="far fa-clock mx-1 text-primary"></i>
+                                  07:26 PM
+                                  <i
+                                    class="fas fa-calendar-alt mx-1 text-primary"
+                                  ></i>
+                                  12-04-2021
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="custom-timeline-item mb-3">
                             <div class="card">
                               <div class="card-header bg-white pt-2 pb-2">
                                 <p class="mb-0">
@@ -428,7 +486,7 @@
                             </div>
                           </li>
                         </ul>
-                      </section>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -441,7 +499,7 @@
                   </div>
 
                   <div class="card-body pb-2 pt-2">
-                    <div class="input-group">
+                    <div class="input-group mt-1">
                       <input
                         type="text"
                         class="form-control"
@@ -458,55 +516,83 @@
                       </button>
                     </div>
                   </div>
-                  <div class="card-footer py-2 bg-white d-flex pb-2 pt-2">
+                  <div class="card-header py-2 bg-white d-flex pb-2 pt-2">
                     <b class="bg-primary m-0 rounded text-white px-1 font-16"
                       >Pacientes registrados</b
                     >
                   </div>
-                </div>
-                <!-- end card-box -->
-
-                <div class="card">
-                  <div class="d-flex p-2 border-bottom">
-                    <div>
-                      <img
-                        src="../assets/images/users/default-user-image.png"
-                        width="75px"
-                        class="img-thumbnail"
-                      />
-                    </div>
-                    <div class="ms-2">
-                      <h4>Daniel Martinez Tamez</h4>
-                    </div>
-                  </div>
-                  <div class="d-flex p-2 border-bottom">
-                    <div>
-                      <img
-                        src="../assets/images/users/default-user-image.png"
-                        width="75px"
-                        class="img-thumbnail"
-                      />
-                    </div>
-                    <div class="ms-2">
-                      <h4>Hamilton A C</h4>
-                      <div class="d-flex align-items-center">
-                        <i
-                          class="fas fa-briefcase text-dark fa-sm fa-fw pe-1"
-                        ></i>
-                        Soñador
+                  <div style="max-height: 636px" data-simplebar>
+                    <div class="p-2 border-bottom">
+                      <div class="ms-2">
+                        <h4>Isela Rodriguez Ruiz</h4>
+                        <p class="mb-0">Femenino, 32 años</p>
                       </div>
                     </div>
-                  </div>
-                  <div class="d-flex p-2 border-bottom">
-                    <div>
-                      <img
-                        src="../assets/images/users/default-user-image.png"
-                        width="75px"
-                        class="img-thumbnail"
-                      />
+                    <div class="p-2 border-bottom bg-primary text-white">
+                      <div class="ms-2">
+                        <h4 class="text-white">Daniel Martinez Tamez</h4>
+                        <p class="mb-0">Masculino, 30 años</p>
+                      </div>
                     </div>
-                    <div class="ms-2">
-                      <h4>Pedro Garcia</h4>
+                    <div class="p-2 border-bottom">
+                      <div class="ms-2">
+                        <h4>Alan Gómez Cruz</h4>
+                        <p class="mb-0">Masculino, 46 años</p>
+                      </div>
+                    </div>
+                    <div class="p-2 border-bottom">
+                      <div class="ms-2">
+                        <h4>Carlos Estrada Juárez</h4>
+                        <p class="mb-0">Masculino, 19 años</p>
+                      </div>
+                    </div>
+                    <div class="p-2 border-bottom">
+                      <div class="ms-2">
+                        <h4>Isela Rodriguez Ruiz</h4>
+                        <p class="mb-0">Femenino, 32 años</p>
+                      </div>
+                    </div>
+                    <div class="p-2 border-bottom">
+                      <div class="ms-2">
+                        <h4>Daniel Martinez Tamez</h4>
+                        <p class="mb-0">Masculino, 30 años</p>
+                      </div>
+                    </div>
+                    <div class="p-2 border-bottom">
+                      <div class="ms-2">
+                        <h4>Alan Gómez Cruz</h4>
+                        <p class="mb-0">Masculino, 46 años</p>
+                      </div>
+                    </div>
+                    <div class="p-2 border-bottom">
+                      <div class="ms-2">
+                        <h4>Carlos Estrada Juárez</h4>
+                        <p class="mb-0">Masculino, 19 años</p>
+                      </div>
+                    </div>
+                    <div class="p-2 border-bottom">
+                      <div class="ms-2">
+                        <h4>Isela Rodriguez Ruiz</h4>
+                        <p class="mb-0">Femenino, 32 años</p>
+                      </div>
+                    </div>
+                    <div class="p-2 border-bottom">
+                      <div class="ms-2">
+                        <h4>Daniel Martinez Tamez</h4>
+                        <p class="mb-0">Masculino, 30 años</p>
+                      </div>
+                    </div>
+                    <div class="p-2 border-bottom">
+                      <div class="ms-2">
+                        <h4>Alan Gómez Cruz</h4>
+                        <p class="mb-0">Masculino, 46 años</p>
+                      </div>
+                    </div>
+                    <div class="p-2 border-bottom">
+                      <div class="ms-2">
+                        <h4>Carlos Estrada Juárez</h4>
+                        <p class="mb-0">Masculino, 19 años</p>
+                      </div>
                     </div>
                   </div>
                 </div>
